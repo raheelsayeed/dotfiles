@@ -4,11 +4,17 @@ inoremap jj <ESC>
 let mapleader = " "
 
 call plug#begin('~/.vim/plugged')
+Plug '/usr/local/opt/fzf'
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/fzf.vim'
 call plug#end() 
 
 " Goyo distraction free writing
     map <leader>f :Goyo \| set linebreak<CR>
+
+    "Fzf 
+    map <leader>s :Files<CR>
+
 
 " Splits open bottom and right
     set splitbelow splitright 
