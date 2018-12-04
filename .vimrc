@@ -1,3 +1,4 @@
+"Stupid Touchbar makes me do this!
 inoremap jj <ESC>
 
 let mapleader = " "
@@ -8,6 +9,10 @@ call plug#end()
 
 " Goyo distraction free writing
     map <leader>f :Goyo \| set linebreak<CR>
+
+" Splits open bottom and right
+    set splitbelow splitright 
+
 
 " Some basics
 syntax on
